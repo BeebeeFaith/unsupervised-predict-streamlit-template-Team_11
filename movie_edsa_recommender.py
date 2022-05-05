@@ -36,8 +36,8 @@ import numpy as np
 import pickle
 
 
-from pandas_profiling import ProfileReport
-from streamlit_pandas_profiling import st_profile_report
+#from pandas_profiling import ProfileReport
+#from streamlit_pandas_profiling import st_profile_report
 
 import requests
 
