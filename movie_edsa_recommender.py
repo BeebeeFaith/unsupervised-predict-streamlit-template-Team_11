@@ -49,7 +49,7 @@ from recommenders.content_based import content_model
 
 ######################
 #Load model
-movies_dict = pickle.load(open('pkl/movies_dicti.pkl , 'rb' ))
+movies_dict = pickle.load(open('pkl/movies_dicti.pkl' , 'rb' ))
 movies = pd.DataFrame(movies_dict)
 similarity = pickle.load(open('resources/models/SVD.pkl' , 'rb'))
 
