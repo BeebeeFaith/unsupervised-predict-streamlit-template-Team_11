@@ -315,7 +315,7 @@ def main():
         st.info("Meet The Team!")
         from PIL import Image
         with st.container():
-            image = Image.open("pkl/cent2.png.png")
+            image = Image.open("pkl/cent2.png")
             st.image(image, use_column_width=True) 
 
 
