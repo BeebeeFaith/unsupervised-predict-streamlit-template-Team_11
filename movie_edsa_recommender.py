@@ -49,9 +49,9 @@ from recommenders.content_based import content_model
 
 ######################
 #Load model
-movies_dict = pickle.load(open('/Users/fbarde/Desktop/+Explore AI/Movie_recommendation_system-main/Streamlit_config/movies_dicti.pkl' , 'rb' ))
+movies_dict = pickle.load(open('pkl/movies_dicti.pkl , 'rb' ))
 movies = pd.DataFrame(movies_dict)
-similarity = pickle.load(open('/Users/fbarde/Desktop/+Explore AI/Movie_recommendation_system-main/Streamlit_config/similarity_matrix.pkl' , 'rb'))
+similarity = pickle.load(open('resources/models/SVD.pkl' , 'rb'))
 
 
 ##########################
@@ -315,7 +315,7 @@ def main():
         st.info("Meet The Team!")
         from PIL import Image
         with st.container():
-            image = Image.open("/Users/fbarde/Downloads/cent2.png")
+            image = Image.open("pkl/cent2.pngcent2.png")
             st.image(image, use_column_width=True) 
 
 
