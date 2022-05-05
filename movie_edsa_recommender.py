@@ -53,7 +53,8 @@ movies_dict = pickle.load(open('pkl/movies_dicti.pkl' , 'rb' ))
 movies = pd.DataFrame(movies_dict)
 similarity = pickle.load(open('resources/models/SVD.pkl' , 'rb'))
 
-
+# Data Loading
+title_list = load_movie_titles('resources/data/movies.csv')
 ##########################
  #Page Title
 st.set_page_config(page_title="CENTAURI", page_icon='frog')
